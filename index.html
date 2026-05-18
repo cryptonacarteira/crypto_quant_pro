@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-        <title>Crypto Quant Pro - Painel de Mercado</title>
+        <title>Indices e Moedas - Crypto Quant Pro</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#343a40">
@@ -9,29 +9,33 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <style>
+            /* Mantém o estilo Investing para a tabela de GAPs */
             .text-right-investing { text-align: right; }
             .bg-up-flash { background-color: #2e7d32 !important; color: #ffffff !important; transition: background 0.3s ease; }
             .bg-down-flash { background-color: #c62828 !important; color: #ffffff !important; transition: background 0.3s ease; }
             .quant-col-destaque { background-color: #2a2e39 !important; font-weight: bold; }
+            .font-quant { font-size: 11px; }
         </style>
     </head>
     <body>
         
+
     <div class="container-fluid">
 
       <div class="row">
 
-        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+
           <table class="table table-dark table-sm table-hover table-borderless" style="margin-bottom: 0; font-size: 12px;">
             <caption class="font-weight-bold mt-3 rounded-top">
               <div class="row">
-                <div class="col-7" style="line-height: 1.2;">Ações de Peso<br><span style="font-size: 10px; color:#848e9c;">Mapeamento Sem GAP</span></div>
+                <div class="col-7">Ações de Peso (Sem GAP)</div>
                 <div class="col-5 text-right"><span class="avg" id="quantipro-avg">0.00%</span></div>
               </div>
             </caption>
             <thead>
-              <tr style="color: #848e9c; font-size: 11px;">
-                <th scope="col" class="text-left">Nome</th>
+              <tr style="color: #848e9c; font-size: 10px;">
+                <th scope="col">Ativo</th>
                 <th scope="col" class="text-right-investing">Último</th>
                 <th scope="col" class="text-right-investing">Abertura</th>
                 <th scope="col" class="text-right-investing">Máxima</th>
@@ -41,9 +45,16 @@
               </tr>
             </thead>
             <tbody id="quantipro-table">
-               </tbody>
+              <tr id="pid-18693"><td class="font-weight-bold">VALE3</td><td class="ultimo text-right-investing">-</td><td class="abertura text-right-investing">-</td><td class="maxima text-right-investing">-</td><td class="minima text-right-investing">-</td><td class="var-fechamento text-right-investing">-</td><td class="var-abertura text-right-investing quant-col-destaque">-</td></tr>
+              <tr id="pid-18712"><td class="font-weight-bold">PETR4</td><td class="ultimo text-right-investing">-</td><td class="abertura text-right-investing">-</td><td class="maxima text-right-investing">-</td><td class="minima text-right-investing">-</td><td class="var-fechamento text-right-investing">-</td><td class="var-abertura text-right-investing quant-col-destaque">-</td></tr>
+              <tr id="pid-18683"><td class="font-weight-bold">ITUB4</td><td class="ultimo text-right-investing">-</td><td class="abertura text-right-investing">-</td><td class="maxima text-right-investing">-</td><td class="minima text-right-investing">-</td><td class="var-fechamento text-right-investing">-</td><td class="var-abertura text-right-investing quant-col-destaque">-</td></tr>
+              <tr id="pid-18621"><td class="font-weight-bold">BBDC4</td><td class="ultimo text-right-investing">-</td><td class="abertura text-right-investing">-</td><td class="maxima text-right-investing">-</td><td class="minima text-right-investing">-</td><td class="var-fechamento text-right-investing">-</td><td class="var-abertura text-right-investing quant-col-destaque">-</td></tr>
+              <tr id="pid-18615"><td class="font-weight-bold">B3SA3</td><td class="ultimo text-right-investing">-</td><td class="abertura text-right-investing">-</td><td class="maxima text-right-investing">-</td><td class="minima text-right-investing">-</td><td class="var-fechamento text-right-investing">-</td><td class="var-abertura text-right-investing quant-col-destaque">-</td></tr>
+              <tr id="pid-18610"><td class="font-weight-bold">ABEV3</td><td class="ultimo text-right-investing">-</td><td class="abertura text-right-investing">-</td><td class="maxima text-right-investing">-</td><td class="minima text-right-investing">-</td><td class="var-fechamento text-right-investing">-</td><td class="var-abertura text-right-investing quant-col-destaque">-</td></tr>
+              <tr id="pid-18591"><td class="font-weight-bold">WEGE3</td><td class="ultimo text-right-investing">-</td><td class="abertura text-right-investing">-</td><td class="maxima text-right-investing">-</td><td class="minima text-right-investing">-</td><td class="var-fechamento text-right-investing">-</td><td class="var-abertura text-right-investing quant-col-destaque">-</td></tr>
+            </tbody>
           </table>
-        </div><div class="col-12 col-sm-6 col-md-3 col-lg-3">
+
           <table class="table table-dark table-sm table-hover table-borderless" style="margin-bottom: 0;">
             <caption class="font-weight-bold mt-3 rounded-top">
               <div class="row">
@@ -115,7 +126,9 @@
             </thead>
             <tbody id="europa-table"></tbody>
           </table>
-        </div><div class="col-12 col-sm-6 col-md-3 col-lg-3">
+
+        </div><div class="col-12 col-sm-4 col-md-4 col-lg-4">
+
           <table class="table table-dark table-sm table-hover table-borderless" style="margin-bottom: 0;">
             <caption class="font-weight-bold mt-3 rounded-top">
               <div class="row">
@@ -169,7 +182,9 @@
             </thead>
             <tbody id="latam-table"></tbody>
           </table>
-        </div><div class="col-12 col-sm-6 col-md-3 col-lg-3">
+
+        </div><div class="col-12 col-sm-4 col-md-4 col-lg-4">
+
           <table class="table table-dark table-sm table-hover table-borderless" style="margin-bottom: 0;">
             <caption class="font-weight-bold mt-3 rounded-top">
               <div class="row">
@@ -223,6 +238,7 @@
             </thead>
             <tbody id="cryptos-table"></tbody>
           </table>
+
         </div></div><footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-6 mb-0 text-muted">Dados generosamente fornecidos por <a href="https://br.investing.com" target="_blank">Investing Brasil</a></p>
         <ul class="nav col-6 justify-content-end">
